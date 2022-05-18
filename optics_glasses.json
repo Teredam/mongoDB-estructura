@@ -1,0 +1,33 @@
+[{
+  "_id": 1,
+  "brand": "Prada",
+  "graduation_left": 1.75,
+  "graduation_right": 0.75,
+  "type": "Metálica",
+  "frame_color": "Blanca",
+  "color_glas_left": "Natural",
+  "color_glas_right": "Tráslucido",
+  "price": 226.75,
+  "providers_id": 1
+},{
+  "_id": 2,
+  "graduation_left": 0.25,
+  "graduation_right": 0.75,
+  "type": "Pasta",
+  "frame_color": "Verde agua",
+  "color_glas_left": "Natural",
+  "color_glas_right": "Natural",
+  "brand_id": 1,
+  "order_id": 1
+},{
+  "_id": 3,
+  "brand": "Bosnia",
+  "graduation_left": 1.25,
+  "graduation_right": 1.75,
+  "type": "Flexible",
+  "frame_color": "Marrón",
+  "color_glas_left": "Tráslucido",
+  "color_glas_right": "Tráslucido",
+  "precio": 182.4,
+  "providers_id": 2
+}]

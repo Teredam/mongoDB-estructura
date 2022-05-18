@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="MongoDb" id="Project-172e" database="MongoDb" >
+	<schema name="optics" >
+		<table name="customers" >
+			<column name="_id" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="name" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="telephone" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="email" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="registration_date" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="sales" type="array[object]" length="800" decimal="0" jt="4999545" mandatory="y" >
+				<column name="employee" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="gafas_id" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			</column>
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<fk name="fk_customers" virtual="y" to_schema="optics" to_table="glasses" >
+				<fk_column name="sales.gafas_id" pk="_id" />
+			</fk>
+		</table>
+		<table name="glasses" >
+			<column name="_id" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="brand" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="graduation_left" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="graduation_right" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="type" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="frame_color" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="color_glas_left" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="color_glas_right" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="precio" type="double" length="800" decimal="0" jt="8" mandatory="y" />
+			<column name="providers_id" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+			<fk name="fk_glasses" virtual="y" to_schema="optics" to_table="providers" >
+				<fk_column name="providers_id" pk="_id" />
+			</fk>
+		</table>
+		<table name="providers" >
+			<column name="_id" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+			<column name="name" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="nif" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="phone" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="fax" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			<column name="address" type="object" length="800" decimal="0" jt="4999544" mandatory="y" >
+				<column name="street" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="number" type="int" length="800" decimal="0" jt="4" mandatory="y" />
+				<column name="city" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+				<column name="country" type="string" length="800" decimal="0" jt="12" mandatory="y" />
+			</column>
+			<index name="_id_" unique="PRIMARY_KEY" >
+				<column name="_id" />
+			</index>
+		</table>
+	</schema>
+	<connector name="MongoDb" database="MongoDb" driver_class="com.wisecoders.dbschema.mongodb.JdbcDriver" driver_jar="mongojdbc4.1.jar" driver_desc="No Authentication" host="localhost" port="27017" instance="localhost" user="root" />
+	<layout name="Main Layout" id="Layout-1e94" show_column_type="y" show_relation="name" >
+		<entity schema="optics" name="providers" column="address" color="BED3F4" x="48" y="96" />
+		<entity schema="optics" name="customers" color="C7F4BE" x="768" y="96" />
+		<entity schema="optics" name="glasses" color="3986C1" x="464" y="80" />
+		<entity schema="optics" name="providers" color="BED3F4" x="240" y="96" />
+		<entity schema="optics" name="customers" column="sales" color="C7F4BE" x="1024" y="96" />
+		<group name="Collection &#039;customers&#039;" color="EEF7EC" >
+			<entity schema="optics" name="customers" />
+			<entity schema="optics" name="customers" column="sales" />
+		</group>
+		<group name="Collection &#039;providers&#039;" color="ECF0F7" >
+			<entity schema="optics" name="providers" column="address" />
+			<entity schema="optics" name="providers" />
+		</group>
+	</layout>
+</project>

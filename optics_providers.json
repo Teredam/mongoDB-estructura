@@ -1,0 +1,25 @@
+[{
+  "_id": 1,
+  "name": "Interplast",
+  "nif": "43879897R",
+  "phone": "953989793",
+  "fax": "935949293",
+  "address": {
+    "street": "Nicaragua",
+    "number": 340,
+    "city": "Barcelona",
+    "country": "Spain"
+  }
+},{
+  "_id": 2,
+  "name": "Metalic",
+  "nif": "12379897F",
+  "phone": "635989793",
+  "fax": "935949123",
+  "address": {
+    "street": "Cartagena",
+    "number": 12,
+    "city": "Barcelona",
+    "country": "Spain"
+  }
+}]

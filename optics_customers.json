@@ -1,0 +1,29 @@
+[{
+  "_id": 1,
+  "name": "Alberto",
+  "telephone": "654636261",
+  "email": "alberto@gmail.com",
+  "registration_date": "\"2020-12-12\"",
+  "sales": [
+    {
+      "employee": "Nestor",
+      "glasses_id": 1
+    },
+    {
+      "employee": "Nestor",
+      "glasses_id": 2
+    }
+  ]
+},{
+  "_id": 2,
+  "name": "Jordi",
+  "telephone": "935949192",
+  "email": "jordi@gmail.com",
+  "registration_date": "2020-02-05",
+  "sales": [
+    {
+      "employee": "Rolando",
+      "glasses_id": 3
+    }
+  ]
+}]
