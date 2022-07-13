@@ -1,0 +1,22 @@
+[{
+  "_id": 1,
+  "nombre": "Pizza Margarita",
+  "descripción": "La pizza original.",
+  "categoria": "pizza clásica",
+  "image_url": "https://cdn.palbincdn.com/users/38724/images/IMG-20220117-WA0002-1642389349.jpg",
+  "precio": 9.9
+},{
+  "_id": 2,
+  "nombre": "Hamburguesa clásica",
+  "descripción": "Hamburguesa con o sin queso",
+  "categoria": "pizza clásica",
+  "image_url": "https://s03.s3c.es/imag/_v0/770x420/c/4/c/600x400_770-420-hamburguesa-cheeseburguer-queso-dreamstime.jpg",
+  "precio": 10.35
+},{
+  "_id": 3,
+  "nombre": "Coca cola zero",
+  "descripción": "Zero azúcares añadidos",
+  "categoria": "N/A",
+  "image_url": "https://st.depositphotos.com/1007097/3992/i/600/depositphotos_39926901-stock-photo-coke-cola-zero-033l-can.jpg",
+  "precio": 1.85
+}]

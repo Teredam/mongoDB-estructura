@@ -1,0 +1,9 @@
+[{
+  "_id": 1,
+  "nombre": "Petra",
+  "direccion": "Calle Villa 34,5-A",
+  "código postal": "08130",
+  "número_de_teléfono": "653636261",
+  "localidad": "Barcelona",
+  "provincia": "Barcelona"
+}]

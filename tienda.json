@@ -1,0 +1,22 @@
+[{
+  "_id": 1,
+  "direccion": "Avenida Meridiana 348, local A",
+  "código postal": "08027",
+  "teléfono": "933636261",
+  "localidad_id": "Barcelona",
+  "provincia": "Barcelona",
+  "empleados": [
+    {
+      "nombre": "Pedrique",
+      "nif": "Y18828281E",
+      "teléfono": "635553322",
+      "tipo": "Cocinero"
+    },
+    {
+      "nombre": "Tomas",
+      "nif": "18828281E",
+      "teléfono": "965553322",
+      "tipo": "Repartidor"
+    }
+  ]
+}]

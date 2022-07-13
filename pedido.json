@@ -1,0 +1,59 @@
+[{
+  "_id": 1,
+  "cliente_id": 1,
+  "id_tienda": 1,
+  "fecha_hora_pedido": {
+    "$date": {
+      "$numberLong": "1657619841000"
+    }
+  },
+  "tipo_pedido": "recoger",
+  "fecha_hora_entrega": {
+    "$date": {
+      "$numberLong": "1657627032000"
+    }
+  },
+  "precio": 39.5,
+  "repartidor": " ",
+  "pedido": [
+    {
+      "producto_id": 1,
+      "cantidad": 1
+    },
+    {
+      "producto_id": 2,
+      "cantidad": 1
+    },
+    {
+      "producto_id": 3,
+      "cantidad": 2
+    }
+  ]
+},{
+  "_id": 2,
+  "cliente_id": 1,
+  "id_tienda": 1,
+  "fecha_hora_pedido": {
+    "$date": {
+      "$numberLong": "1657619841000"
+    }
+  },
+  "tipo_pedido": "recoger",
+  "fecha_hora_entrega": {
+    "$date": {
+      "$numberLong": "1657627032000"
+    }
+  },
+  "precio": 13.75,
+  "repartidor": "Monica",
+  "pedido": [
+    {
+      "producto_id": 1,
+      "cantidad": 1
+    },
+    {
+      "producto_id": 3,
+      "cantidad": 1
+    }
+  ]
+}]
